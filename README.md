@@ -52,8 +52,7 @@ Zonkeyは分割キーボードを初めて使用する方にも扱いやすい<b
 
 # 仕様
 
-![Image](https://github.com/user-attachments/assets/5f487546-771b-44a3-b13c-cabdf2f41b11)
-
+![Image](https://github.com/user-attachments/assets/b583439f-5cec-44ee-a49e-5a2284ef2eae)
 無線接続(BLE)対応<br>
 ロウスタッガード配列(キー数:42)<br>
 トラックボール搭載可能（34mm,25mm用ケースがそれぞれ１つずつ附属します。）<br>
