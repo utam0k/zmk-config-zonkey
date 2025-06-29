@@ -12,7 +12,7 @@ Zonkeyは分割キーボードを初めて使用する方にも扱いやすい<b
 <br>
 <br>
 
-![Image](https://github.com/user-attachments/assets/8a479e45-fbee-44db-97cd-d00713b36cb2)
+![Image](https://github.com/user-attachments/assets/2d8b81b8-3461-46fd-ad0a-fdfbf65e068e)
 <br>
 <br>
 <br>
