@@ -114,7 +114,7 @@ Lipoバッテリー(28×38×厚さ6mm)までのバッテリーを収納可能<br
 <br>
 
 # 対応ロープロファイルスイッチ一覧
-![Image](https://github.com/user-attachments/assets/03dbc5da-85f1-4aac-bc44-5c0c68d64fdc)
+![Image](https://github.com/user-attachments/assets/c74a6a89-68ec-47ae-9d7d-bca526209cd7)
 <br>
 <br>
 <br>
