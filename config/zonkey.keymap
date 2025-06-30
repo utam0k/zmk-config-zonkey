@@ -203,7 +203,7 @@ mo2: mo2 {
             >;
 
             sensor-bindings =
-                <&scroll_up_down>,
+                <&scroll_down_up>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
@@ -221,7 +221,7 @@ mo2: mo2 {
 &mt LCTL ESC    &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 INT_HENKAN  &lt 4 SPACE  &lt 1 INT_MUHENKAN                 &kp BACKSPACE  &kp ENTER                      &kp DEL
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_down_up>;
         };
 
         layer_2 {
@@ -238,7 +238,7 @@ mo2: mo2 {
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 INT_HENKAN  &lt 2 SPACE  &lt 4 INT_MUHENKAN            &kp BACKSPACE  &kp ENTER                                                   &kp DEL
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_down_up>
         };
 
         layer_3 {
@@ -255,7 +255,7 @@ mo2: mo2 {
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 6 SPACE  &lt 5 INT_MUHENKAN    &kp BACKSPACE  &kp ENTER                           &kp DEL
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_down_up>
         };
 
         layer_4 {
@@ -272,7 +272,7 @@ mo2: mo2 {
 &kp LCTRL       &kp LEFT_WIN    &kp LEFT_ALT  &kp INT_HENKAN  &kp SPACE   &kp INT_MUHENKAN          &kp BACKSPACE    &kp ENTER                                                           &kp DEL
             >;        
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_down_up>
         };
 
         SCROLL {
@@ -290,7 +290,7 @@ mo2: mo2 {
             >;
 
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_down_up>
         };
 
         MOUSE {
@@ -301,7 +301,7 @@ mo2: mo2 {
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_down_up>
         };
     };
 };
