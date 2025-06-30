@@ -180,18 +180,18 @@ kemapを編集して使用する場合は以下に記載する手順を行う必
  <br>
 <br>
 
-![Image](https://github.com/user-attachments/assets/0e543f75-9da1-40cf-a648-33d741c6b908)
+![Image](https://github.com/user-attachments/assets/ef8b922a-1d47-4e02-a9da-314b26b6a6cc)
 <br>
 <br>
 <br>
 <br>
 必要な情報を入力し、アカウント登録<br>
 
-![Image](https://github.com/user-attachments/assets/2650848b-c591-4fdd-8798-8093ea3c0d9e)
+![Image](https://github.com/user-attachments/assets/cfec7a13-d741-4ec6-85fc-a5e27b5c8f0c)
 <br>
-(2)アカウントへログインし、ファームウェアリンクをクリック<br>
+(2)アカウントへログインし、検索窓から「zmk-config-zonkey」を検索してページへ飛んでください。<br>
 
-![Image](https://github.com/user-attachments/assets/c38a90e0-b080-419f-b348-7071e269e80c)
+![Image](https://github.com/user-attachments/assets/100f936d-063d-4563-995c-6b0350e48c06)
 <br>
 <br>
 <br>
@@ -200,22 +200,27 @@ kemapを編集して使用する場合は以下に記載する手順を行う必
 <br>
 <br>
 <br>
-![Image](https://github.com/user-attachments/assets/0f7c2c4d-55b3-443f-93fb-2fdec00d722b)
+![Image](https://github.com/user-attachments/assets/7ba0d4d2-b955-46c0-b829-a0608a47e04b)
 <br>
 
-![Image](https://github.com/user-attachments/assets/e7001a61-23d4-4f59-9ea3-8c701016b6be)
+![Image](https://github.com/user-attachments/assets/459b93e9-ffee-4062-8ca0-e15309887c75)
 
 (4)クローンしたリポジトリの上部からアクションを選択<br>
 <br>
 <br>
-![Image](https://github.com/user-attachments/assets/733ea4d0-0bc4-43ab-a0de-0165236714fc)
+![Image](https://github.com/user-attachments/assets/0c5833bc-d517-4573-be30-85a07fb483d3)
 <br>
 <br>
 <br>
 <br>
 <br>
-
-![Image](https://github.com/user-attachments/assets/e0aed0af-7bcb-42f4-8a98-1767e3dd94fe)
+![Image](https://github.com/user-attachments/assets/3b9b3572-28d0-48ba-9cff-eb295adbcf6e)
+<br>
+<br>
+<br>
+<br>
+<br>
+![Image](https://github.com/user-attachments/assets/d2ab6866-d7c0-4d92-9e4b-c4f2a02d4e7c)
 <br>
 <br>
 <br>
@@ -223,38 +228,33 @@ kemapを編集して使用する場合は以下に記載する手順を行う必
 (5)「ワークフローを実行する」でZonkeyのファームウェアをビルドする<br>
 <br>
 <br>
-
-![Image](https://github.com/user-attachments/assets/ce416c1a-5587-4660-b1e6-46ae6995e75b)
-
-![Image](https://github.com/user-attachments/assets/ac41645c-a692-4bfa-bbd6-3910aaff0b22)
-
-![Image](https://github.com/user-attachments/assets/d729c9a3-fe27-48fe-8bac-534bdb01d9d0)
-
-![Image](https://github.com/user-attachments/assets/6d232f12-ca95-44c5-a60f-bb44a064d15e)
+<br>
+<br>
+![Image](https://github.com/user-attachments/assets/b25f0bca-d920-4485-9ea8-73e460388792)
+<br>
 <br>
 <br>
 <br>
 (6)すぐにビルドが実行されます<br>
 <br>
 <br>
-
-![Image](https://github.com/user-attachments/assets/0803d74b-d0c8-4a0e-9201-b87a53883d4a)
+![Image](https://github.com/user-attachments/assets/7d8c1cd5-3ce3-4ad1-b8ca-2c31f1e3690f)
+<br>
 <br>
 <br>
 <br>
 (7).github/workflows/build.ymlをクリックして画面を切り替える
 <br>
 <br>
-
-![Image](https://github.com/user-attachments/assets/1a295c21-66f1-4a14-b99d-7db7900aecef)
+<br>
+![Image](https://github.com/user-attachments/assets/7edbb27f-ec5c-42c1-8c1b-04128dc1dba1)
 <br>
 <br>
 (8)任意の場所を指定してファームウェア圧縮ファイルをダウンロード<br>
 <br>
 <br>
 <br>
-
-![Image](https://github.com/user-attachments/assets/049cedf6-08e1-4d3b-9793-899c00ed1b2b)
+![Image](https://github.com/user-attachments/assets/0c98a368-d8c5-49b2-bbb3-6a4a62c33e7a)
 <br>
 <br>
 <br>
@@ -266,9 +266,7 @@ kemapを編集して使用する場合は以下に記載する手順を行う必
 <br>
 <br>
 <br>
-
-![Image](https://github.com/user-attachments/assets/df63e8d0-bb8f-4b03-b2e5-f920dc2563d4)
-
+![Image](https://github.com/user-attachments/assets/c4e7aa44-5e43-4047-a2a1-c0326cbcd15e)
 <br>
 <br>
 <br>
@@ -283,67 +281,41 @@ kemapを編集して使用する場合は以下に記載する手順を行う必
 メインで使用するPCからファームウェアをダウンロードするようにしてください。<br>
 <br>
 <br>
-(1)PCとZonkeyの左手側をUSBケーブルで接続して下さい。<br>
+(1)PCとZonkeyをUSBケーブルで接続し、以下の手順を行ってください。<br>
 <br>
 <br>
-
-![Image](https://github.com/user-attachments/assets/395be03e-aeb5-47ff-b0d2-2605baa56e13)<br>
+![Image](https://github.com/user-attachments/assets/e078be36-1923-467d-9b56-f62549bcde46)<br>
 <br>
 <br>
-(2)USB接続後にリセットボタンを２回連続で押すと、「XIAO-SENCE」とキーボード内のマイコンが表示されます<br>
+![Image](https://github.com/user-attachments/assets/880c65bf-12c2-469f-85a4-2d6045081ef1)<br>
 <br>
 <br>
-
-<img width="786" alt="Image" src="https://github.com/user-attachments/assets/71b2cb33-4dc9-4ba5-a52f-376d3ff977ba" />
-<br>
-<br>
-<br>
-<br>
-(3)　１．表示された「XIAOーSENSE」へダウンロードした「setting_reset-seeduino_xiao_ble-zmk」をドラッグアンドドロップ<br>
-　　 ２．「XIAO-SENSE」は「setting_reset-seeduino_xiao_ble-zmk」を書き込むと消えます。<br>
-   　　　もう一度リセットボタンを２回連続で押して「XIAO-SENSE」を再表示させ、「zonkey_L rgbled~」をドラッグアンドドロップ<br>
-<br>
-<br>
-<br>
-
-<img width="515" alt="Image" src="https://github.com/user-attachments/assets/f64b86c4-1b41-47f1-882a-0917fdbb8ac3" />
-<br>
-<br>
-<br>
-MACにて作業を行うと、上にあるような書き込みエラーがその都度表示されますが、書き込みは行われています。<br>
-<br>
-<br>
-以上で左手側のファームの書き込みは完了です。<br>
-同様に右手側も「setting_reset-seeduino_xiao_ble-zmk」を書き込み、「zonkey_R rgbled~」を書き込んでファーム書き込み作業は完了です。<br>
 <br>
 <br>
 <br>
 
 # PCとの接続方法
 
-(1) PCのBluetooth設定画面を開きます。<br>
+(1) ZonkeyをON（スイッチを上にあげた状態）でPCのBluetooth設定画面を開きます。<br>
 <br>
 <br>
-<br>
-(2) Zonkeyのスイッチを左手側からスイッチを「ON」にします。<br>
-<br>
+![Image](https://github.com/user-attachments/assets/980d3bfa-c8ea-49d3-ba09-e577de4bf882)<br>
 <br>
 <br>
-(3)リセットボタンを１回押すとデバイスに「zonkey」が表示されますので「接続」を押すとペアリングできます。<br>
+![Image](https://github.com/user-attachments/assets/d37cf8e8-12cb-431f-82cf-d8e7e0e9ed9d)
 <br>
 <br>
-<br>
-
-<img width="740" alt="Image" src="https://github.com/user-attachments/assets/d4ba6e77-81bd-45f4-ad82-110f814dcfe8" />
+![Image](https://github.com/user-attachments/assets/5638c59a-0eb3-49ed-9ff3-e86f585cbcf9)
 <br>
 <br>
-<br>
-(4)一度、ペアリングを設定したデバイスは２回目からは自動的にペアリングできますので、リセットボタンを押す必要はありません。<br>
-<br>
+![Image](https://github.com/user-attachments/assets/d70637cd-3986-4703-82ca-4f0cada86e07)
 <br>
 <br>
-
-<img width="737" alt="Image" src="https://github.com/user-attachments/assets/879ca67b-f8cf-45bf-9a6e-eba971defe10" />
+![Image](https://github.com/user-attachments/assets/4d78ec38-bf6a-4fa7-a6f7-9b3bd32732fd)
+<br>
+<br>
+(2)一度、ペアリングを設定したデバイスは２回目からは自動的にペアリングできますので、リセットボタンを押す必要はありません。<br>
+<br>
 <br>
 <br>
 <br>
@@ -385,9 +357,6 @@ MACにて作業を行うと、上にあるような書き込みエラーがそ�
 <br>
 <br>
 <br>
-<br>
-
-
 # キーマップ編集
 <br>
 >ファームウェアを書き込んだ時点でデフォルトのキーマップが反映されています。<br>
