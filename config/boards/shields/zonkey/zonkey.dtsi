@@ -38,7 +38,7 @@
         status = "disabled";
     };
 
-　　right_encoder: encoder_right {
+    right_encoder: encoder_right {
         status = "disabled";
     };
 
