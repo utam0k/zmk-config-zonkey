@@ -203,7 +203,7 @@ mo2: mo2 {
             >;
 
             sensor-bindings =
-                <&scroll_down_up>,
+                <&scroll_up_down>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
