@@ -222,7 +222,7 @@ mo2: mo2 {
 &mt LCTL ESC    &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 INT_HENKAN  &lt 4 SPACE  &lt 1 INT_MUHENKAN                 &kp BACKSPACE  &kp ENTER                      &kp DEL
             >;
 
-            sensor-bindings = <&scroll_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_2 {
@@ -239,7 +239,7 @@ mo2: mo2 {
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 INT_HENKAN  &lt 2 SPACE  &lt 4 INT_MUHENKAN            &kp BACKSPACE  &kp ENTER                                  &kp DEL
             >;
 
-            sensor-bindings = <&scroll_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_3 {
@@ -273,7 +273,7 @@ mo2: mo2 {
 &kp LCTRL       &kp LEFT_WIN    &kp LEFT_ALT  &lt 5 INT_HENKAN  &lt 4 SPACE   &lt 1 INT_MUHENKAN                     &kp BACKSPACE    &kp ENTER                                          &kp DEL
             >;
 
-            sensor-bindings = <&scroll_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         SCROLL {
@@ -291,7 +291,7 @@ mo2: mo2 {
             >;
 
 
-            sensor-bindings = <&scroll_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
@@ -302,7 +302,7 @@ mo2: mo2 {
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &trans
             >;
 
-            sensor-bindings = <&scroll_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
