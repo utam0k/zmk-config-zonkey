@@ -230,10 +230,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans            &trans                                     &trans  &trans          &kp UP_ARROW     &trans           &trans
-&trans  &trans  &trans  &trans            &trans       &trans                &trans  &trans  &kp LEFT_ARROW  &kp RIGHT        &kp C_MENU_UP    &trans
-&trans  &trans  &trans  &trans            &trans       &trans                &trans  &trans  &kp DOWN        &kp C_MENU_LEFT  &kp C_MENU_DOWN  &kp C_MENU_RIGHT
-&trans  &trans  &trans  &lt 0 INT_HENKAN  &lt 2 SPACE  &lt 4 INT_MUHENKAN            &trans  &trans                                                              &trans
+&trans  &trans     &trans     &trans            &trans                                     &trans  &trans          &kp UP_ARROW     &trans           &trans
+&trans  &mkp LCLK  &mkp MCLK  &mkp RCLK         &trans       &trans                &trans  &trans  &kp LEFT_ARROW  &kp RIGHT        &kp C_MENU_UP    &trans
+&trans  &trans     &trans     &trans            &trans       &trans                &trans  &trans  &kp DOWN        &kp C_MENU_LEFT  &kp C_MENU_DOWN  &kp C_MENU_RIGHT
+&trans  &trans     &trans     &lt 0 INT_HENKAN  &lt 2 SPACE  &lt 4 INT_MUHENKAN            &trans  &trans                                                              &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
