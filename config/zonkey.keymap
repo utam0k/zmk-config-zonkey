@@ -219,10 +219,10 @@
 
         layer_1 {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5                                       &kp NUMBER_6     &kp NUMBER_7  &kp N8  &kp N9  &kp N0
-&trans        &trans        &trans        &trans            &kp LEFT_BRACE  &trans                &trans       &kp RIGHT_BRACE  &trans        &trans  &moD    &moE
-&trans        &trans        &trans        &trans            &trans          &trans                &kp JP_EISU  &kp JP_KANA      &trans        &moF    &moG    &moH
-&mt LCTL ESC  &trans        &trans        &lt 5 INT_HENKAN  &lt 4 SPACE     &lt 1 INT_MUHENKAN                 &trans           &trans                                &moI
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5                                       &kp NUMBER_6     &kp NUMBER_7  &kp N8    &kp N9    &kp N0
+&trans        &trans        &trans        &trans            &kp LEFT_BRACE  &trans                &trans       &kp RIGHT_BRACE  &mkp MB1      &mkp MB3  &mkp MB2  &moE
+&trans        &trans        &trans        &trans            &trans          &trans                &kp JP_EISU  &kp JP_KANA      &trans        &moF      &moG      &moH
+&mt LCTL ESC  &trans        &trans        &lt 5 INT_HENKAN  &lt 4 SPACE     &lt 1 INT_MUHENKAN                 &trans           &trans                                    &moI
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
