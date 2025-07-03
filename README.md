@@ -167,7 +167,7 @@ Lipoバッテリー(28×38×厚さ6mm)までのバッテリーを収納可能<br
 kemapを編集しない場合はフォークする必要はありません。<br>
 >[zonkey(JIS配列）ファームウェア.zip](https://github.com/user-attachments/files/21035838/zonkey.JIS.zip)<br>
 >[zonkey(JIS配列）オートマウスなし.zip](https://github.com/user-attachments/files/21035843/zonkey.JIS.zip)<br>
->[zonkey(US配列）ファームウェア.zip](https://github.com/user-attachments/files/21035849/zonkey.US.zip)<br>
+>[zonkey(US配列）ファームウェア.zip](https://github.com/user-attachments/files/21036753/zonkey.US.zip)<br>
 <br>
 元データ<br>
 [zmk-config-zonkey(JIS)](https://github.com/kureyakey/zmk-config-zonkey)<br>
