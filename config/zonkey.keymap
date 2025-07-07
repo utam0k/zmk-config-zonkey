@@ -209,9 +209,9 @@
         default_layer {
             bindings = <
 &kp Q           &kp W         &kp E    &kp R     &kp T                                   &kp Y        &kp U      &kp I      &kp O    &kp P
-&kp A           &kp S         &kp D    &kp F     &kp G      &kp LG(LEFT)       &kp PLUS  &kp H        &kp J      &kp K      &kp L    &kp SEMICOLON
+&kp A           &kp S         &kp D    &kp F     &kp G      &kp LG(LEFT)       &kp PLUS  &kp H        &kp J      &kp K      &kp L    &kp TAB
 &kp LEFT_SHIFT  &kp Z         &kp X    &kp C     &kp V      &kp B              &kp TAB   &kp N        &kp M      &kp COMMA  &kp DOT  &kp SLASH
-&kp MINUS       &kp LEFT_ALT  &kp ESC  &kp LGUI  &kp LCTRL  &lt 2 BACKSPACE              &lt 1 SPACE  &kp ENTER                                     &kp GRAVE
+&kp MINUS       &kp LEFT_ALT  &kp ESC  &kp LGUI  &kp LCTRL  &lt 2 BACKSPACE              &lt 1 SPACE  &kp ENTER                                 &kp GRAVE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -220,9 +220,9 @@
         layer_1 {
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                    &kp NUMBER_6     &kp NUMBER_7  &kp N8    &kp N9    &kp N0
-&trans        &mkp LCLK     &mkp MCLK     &mkp RCLK     &kp LEFT_BRACE  &trans             &trans       &kp RIGHT_BRACE  &mkp MB1      &mkp MB3  &mkp MB2  &moE
+&trans        &mkp LCLK     &mkp MCLK     &mkp RCLK     &kp LEFT_BRACE  &trans             &trans       &kp RIGHT_BRACE  &mkp MB1      &mkp MB3  &mkp MB2  &kp SEMICOLON
 &trans        &trans        &trans        &trans        &trans          &kp ESCAPE         &kp JP_EISU  &kp JP_KANA      &trans        &moF      &moG      &moH
-&mt LCTL ESC  &trans        &trans        &kp LGUI      &kp LCTRL       &lt 2 BACKSPACE                 &lt 1 SPACE      &kp ENTER                                 &moI
+&mt LCTL ESC  &trans        &trans        &kp LGUI      &kp LCTRL       &lt 2 BACKSPACE                 &lt 1 SPACE      &kp ENTER                                        &moI
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -231,7 +231,7 @@
         layer_2 {
             bindings = <
 &trans  &trans     &trans     &trans     &trans                                &trans       &trans     &trans           &trans           &trans
-&trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans     &trans             &trans  &kp LEFT     &kp DOWN   &kp UP_ARROW     &kp RIGHT        &trans
+&trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans     &trans             &trans  &kp LEFT     &kp DOWN   &kp UP_ARROW     &kp RIGHT        &kp SEMICOLON
 &trans  &trans     &trans     &trans     &trans     &trans             &trans  &trans       &trans     &kp C_MENU_LEFT  &kp C_MENU_DOWN  &kp C_MENU_RIGHT
 &trans  &trans     &trans     &kp LGUI   &kp LCTRL  &lt 2 BACKSPACE            &lt 1 SPACE  &kp ENTER                                                      &trans
             >;
