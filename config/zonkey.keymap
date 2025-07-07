@@ -221,7 +221,7 @@
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                      &kp NUMBER_6    &kp NUMBER_7  &kp N8        &kp N9     &kp N0
 &trans        &mkp LCLK     &mkp MCLK     &mkp RCLK     &kp ESCAPE    &trans             &kp RIGHT_BRACE  &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &kp SEMICOLON
-&trans        &trans        &trans        &trans        &trans        &kp LEFT_BRACE     &kp JP_EISU      &kp JP_KANA     &trans        &moF          &moG       &moH
+&trans        &trans        &trans        &trans        &kp MINUS     &kp LEFT_BRACE     &kp JP_EISU      &kp JP_KANA     &trans        &moF          &moG       &moH
 &mt LCTL ESC  &trans        &trans        &kp LGUI      &kp LCTRL     &lt 2 BACKSPACE                     &lt 1 SPACE     &kp ENTER                                             &moI
             >;
 
