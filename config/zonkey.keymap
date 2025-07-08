@@ -61,6 +61,13 @@
             bindings = <&kp LS(TAB)>;
             label = "SHIFT_TAB";
         };
+
+        mac_screenshot: mac_screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(N4))>;
+            label = "MAC_SCREENSHOT";
+        };
     };
 
     behaviors {
@@ -238,7 +245,7 @@
 
         layer_2 {
             bindings = <
-&trans  &trans     &trans     &trans     &trans                                &trans       &trans     &trans           &trans           &trans
+&trans  &trans     &trans     &trans     &trans                                &trans       &trans     &trans           &trans           &mac_screenshot
 &trans  &trans     &trans     &trans     &trans     &trans             &trans  &kp LEFT     &kp DOWN   &kp UP_ARROW     &kp RIGHT        &trans
 &trans  &trans     &trans     &trans     &trans     &trans             &trans  &trans       &trans     &kp C_MENU_LEFT  &kp C_MENU_DOWN  &kp C_MENU_RIGHT
 &trans  &trans     &trans     &kp LGUI   &kp LCTRL  &lt 2 BACKSPACE            &lt 1 SPACE  &kp ENTER                                                      &trans
