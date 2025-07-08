@@ -215,6 +215,16 @@
 
             tap-ms = <20>;
         };
+
+        mt_lctrl_lclk: mt_lctrl_lclk {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP_LCTRL_LCLK";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&mkp>;
+            tapping-term-ms = <125>;
+            quick-tap-ms = <100>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
@@ -225,7 +235,7 @@
 &kp Q           &kp W         &kp E    &kp R     &kp T                                   &kp Y        &kp U      &kp I      &kp O    &kp P
 &kp A           &kp S         &kp D    &lt 6 F   &lt 7 G    &kp LG(RS(N0))     &kp PLUS  &kp H        &kp J      &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT TAB  &kp Z         &kp X    &kp C     &kp V      &kp B              &kp SEMICOLON   &kp N        &kp M      &kp COMMA  &kp DOT  &kp SLASH
-&kp MINUS       &kp LEFT_ALT  &kp ESC  &kp LGUI  &kp LCTRL  &lt 2 BACKSPACE              &lt 1 SPACE  &kp ENTER                                 &kp GRAVE
+&kp MINUS       &kp LEFT_ALT  &kp ESC  &kp LGUI  &mt_lctrl_lclk LCTRL LCLK  &lt 2 BACKSPACE              &lt 1 SPACE  &kp ENTER                                 &kp GRAVE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
