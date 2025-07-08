@@ -209,7 +209,7 @@
         default_layer {
             bindings = <
 &kp Q           &kp W         &kp E    &kp R     &kp T                                   &kp Y        &kp U      &kp I      &kp O    &kp P
-&kp A           &kp S         &kp D    &kp F     &lt 7 G    &kp LG(RS(N0))     &kp PLUS  &kp H        &kp J      &kp K      &kp L    &kp MINUS
+&kp A           &kp S         &kp D    &lt 6 F   &lt 7 G    &kp LG(RS(N0))     &kp PLUS  &kp H        &kp J      &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT TAB  &kp Z         &kp X    &kp C     &kp V      &kp B              &kp SEMICOLON   &kp N        &kp M      &kp COMMA  &kp DOT  &kp SLASH
 &kp MINUS       &kp LEFT_ALT  &kp ESC  &kp LGUI  &kp LCTRL  &lt 2 BACKSPACE              &lt 1 SPACE  &kp ENTER                                 &kp GRAVE
             >;
@@ -220,7 +220,7 @@
         layer_1 {
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                      &kp NUMBER_6    &kp NUMBER_7  &kp N8        &kp N9     &kp N0
-&trans        &mkp LCLK     &mkp MCLK     &mkp RCLK     &kp ESCAPE    &trans             &kp RIGHT_BRACE  &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &trans
+&trans        &trans        &trans        &trans        &kp ESCAPE    &trans             &kp RIGHT_BRACE  &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &trans
 &trans        &trans        &trans        &trans        &trans     &kp LEFT_BRACE     &kp JP_EISU      &kp JP_KANA     &trans        &moF          &moG       &moH
 &mt LCTL ESC  &trans        &trans        &kp LGUI      &kp LCTRL     &lt 2 BACKSPACE                     &lt 1 SPACE     &kp ENTER                                             &moI
             >;
@@ -231,7 +231,7 @@
         layer_2 {
             bindings = <
 &trans  &trans     &trans     &trans     &trans                                &trans       &trans     &trans           &trans           &trans
-&trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans     &trans             &trans  &kp LEFT     &kp DOWN   &kp UP_ARROW     &kp RIGHT        &trans
+&trans  &trans     &trans     &trans     &trans     &trans             &trans  &kp LEFT     &kp DOWN   &kp UP_ARROW     &kp RIGHT        &trans
 &trans  &trans     &trans     &trans     &trans     &trans             &trans  &trans       &trans     &kp C_MENU_LEFT  &kp C_MENU_DOWN  &kp C_MENU_RIGHT
 &trans  &trans     &trans     &kp LGUI   &kp LCTRL  &lt 2 BACKSPACE            &lt 1 SPACE  &kp ENTER                                                      &trans
             >;
@@ -275,9 +275,9 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans     &trans     &trans                       &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans    &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans                                &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans     &trans     &mkp LCLK  &mkp RCLK            &trans  &trans                                &mkp MCLK
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
