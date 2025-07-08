@@ -7,6 +7,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/consumer.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define DFb 0
@@ -52,6 +53,13 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        shift_tab: shift_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(TAB)>;
+            label = "SHIFT_TAB";
         };
     };
 
@@ -220,8 +228,8 @@
         layer_1 {
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                      &kp NUMBER_6    &kp NUMBER_7  &kp N8        &kp N9     &kp N0
-&trans        &trans        &trans        &trans        &kp ESCAPE    &trans             &kp RIGHT_BRACE  &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &trans
-&trans        &trans        &trans        &trans        &trans     &kp LEFT_BRACE     &kp JP_EISU      &kp JP_KANA     &trans        &moF          &moG       &moH
+&kp C_AC_BACK &kp C_AC_FORWARD &trans    &trans        &kp ESCAPE    &trans             &kp RIGHT_BRACE  &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &trans
+&shift_tab    &trans        &trans        &trans        &trans     &kp LEFT_BRACE     &kp JP_EISU      &kp JP_KANA     &trans        &moF          &moG       &moH
 &mt LCTL ESC  &trans        &trans        &kp LGUI      &kp LCTRL     &lt 2 BACKSPACE                     &lt 1 SPACE     &kp ENTER                                             &moI
             >;
 
