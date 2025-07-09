@@ -221,9 +221,11 @@
             label = "MOD_TAP_LCTRL_LCLK";
             #binding-cells = <2>;
             bindings = <&kp>, <&mkp>;
-            tapping-term-ms = <125>;
-            quick-tap-ms = <100>;
-            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            hold-while-undecided;
+            hold-trigger-on-release;
         };
 
         mt_shift_tab: mt_shift_tab {
