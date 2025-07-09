@@ -44,7 +44,16 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        combo_equal {
+            timeout-ms = <30>;
+            key-positions = <8 9>;  // j and k
+            bindings = <&kp EQUAL>;
+            layers = <0>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -73,6 +82,13 @@
             #binding-cells = <0>;
             bindings = <&kp LC(SPACE)>;
             label = "CTRL_SPACE";
+        };
+
+        ctrl_shift_plus: ctrl_shift_plus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(KP_PLUS))>;
+            label = "CTRL_SHIFT_PLUS";
         };
     };
 
@@ -267,7 +283,7 @@
         default_layer {
             bindings = <
 &kp Q           &kp W         &kp E    &kp R     &kp T                                                        &kp Y        &kp U      &kp I      &kp O    &kp P
-&kp A           &kp S         &kp D    &lt 6 F   &lt 7 G                    &kp LG(RS(N0))     &kp EQUAL      &kp H        &kp J      &kp K      &kp L    &kp TAB
+&kp A           &kp S         &kp D    &lt 6 F   &lt 7 G                    &kp LG(RS(N0))     &kp MINUS      &kp H        &kp J      &kp K      &kp L    &kp TAB
 &kp LEFT_SHIFT  &kp Z         &kp X    &kp C     &kp V                      &kp B              &lt 2 SEMICOLON  &kp N        &kp M      &kp COMMA  &kp DOT  &kp SLASH
 &kp SEMICOLON   &kp ESC       &kp LEFT_ALT  &mt_lgui_ctrlspace LGUI 0  &mt_lctrl_lclk LCTRL LCLK  &kp BACKSPACE                   &lt 1 SPACE  &kp ENTER                                 &kp GRAVE
             >;
@@ -278,8 +294,8 @@
         layer_1 {
             bindings = <
 &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5                                  &kp NUMBER_6    &kp NUMBER_7  &kp N8        &kp N9     &kp N0
-&kp BACKSLASH   &kp LBKT          &kp RBKT           &kp SQT       &kp ESCAPE    &trans             &kp MINUS    &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &kp SEMICOLON
-&kp LEFT_SHIFT  &trans            &trans             &trans        &trans        &trans             &kp JP_EISU  &kp JP_KANA     &trans        &moF          &moG       &moH
+&kp BACKSLASH   &kp LBKT          &kp RBKT           &kp SQT       &kp ESCAPE    &trans             &kp EQUAL    &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &kp SEMICOLON
+&kp LEFT_SHIFT  &trans            &trans             &trans        &trans        &trans             &kp JP_EISU  &kp JP_KANA     &trans        &ctrl_shift_plus  &moG       &moH
 &trans          &trans            &trans             &mt_lgui_ctrlspace LGUI 0      &kp LCTRL     &lt 2 BACKSPACE                 &lt 1 SPACE     &kp ENTER                                      &mac_screenshot
             >;
 
