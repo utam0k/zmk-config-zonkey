@@ -269,7 +269,7 @@
 &kp Q           &kp W         &kp E    &kp R     &kp T                                                        &kp Y        &kp U      &kp I      &kp O    &kp P
 &kp A           &kp S         &kp D    &lt 6 F   &lt 7 G                    &kp LG(RS(N0))     &kp PLUS       &kp H        &kp J      &kp K      &kp L    &kp TAB
 &kp LEFT_SHIFT  &kp Z         &kp X    &kp C     &kp V                      &kp B              &lt 2 SEMICOLON  &kp N        &kp M      &kp COMMA  &kp DOT  &kp SLASH
-&kp SEMICOLON   &kp LEFT_ALT  &kp ESC  &mt_lgui_ctrlspace LGUI 0  &mt_lctrl_lclk LCTRL LCLK  &kp BACKSPACE                   &lt 1 SPACE  &kp ENTER                                 &kp GRAVE
+&kp SEMICOLON   &kp ESC       &kp LEFT_ALT  &mt_lgui_ctrlspace LGUI 0  &mt_lctrl_lclk LCTRL LCLK  &kp BACKSPACE                   &lt 1 SPACE  &kp ENTER                                 &kp GRAVE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
