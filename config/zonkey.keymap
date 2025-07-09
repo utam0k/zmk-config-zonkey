@@ -221,6 +221,7 @@
             label = "MOD_TAP_LCTRL_LCLK";
             #binding-cells = <2>;
             bindings = <&kp>, <&mkp>;
+
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             flavor = "tap-preferred";
@@ -233,6 +234,7 @@
             label = "MOD_TAP_SHIFT_TAB";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
+
             tapping-term-ms = <150>;
             quick-tap-ms = <125>;
             flavor = "tap-preferred";
@@ -244,10 +246,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E    &kp R     &kp T                                   &kp Y        &kp U      &kp I      &kp O    &kp P
-&kp A           &kp S         &kp D    &lt 6 F   &lt 7 G    &kp LG(RS(N0))     &kp PLUS  &kp H        &kp J      &kp K      &kp L    &kp SQT
-&mt_shift_tab LEFT_SHIFT TAB  &kp Z         &kp X    &kp C     &kp V      &kp B              &kp SEMICOLON   &kp N        &kp M      &kp COMMA  &kp DOT  &kp SLASH
-&kp SEMICOLON       &kp LEFT_ALT  &kp ESC  &kp LGUI  &mt_lctrl_lclk LCTRL LCLK  &lt 2 BACKSPACE              &lt 1 SPACE  &kp ENTER                                 &kp GRAVE
+&kp Q                         &kp W         &kp E    &kp R     &kp T                                                        &kp Y        &kp U      &kp I      &kp O    &kp P
+&kp A                         &kp S         &kp D    &lt 6 F   &lt 7 G                    &kp LG(RS(N0))     &kp PLUS       &kp H        &kp J      &kp K      &kp L    &kp SQT
+&mt_shift_tab LEFT_SHIFT TAB  &kp Z         &kp X    &kp C     &kp V                      &kp B              &kp SEMICOLON  &kp N        &kp M      &kp COMMA  &kp DOT  &kp SLASH
+&kp SEMICOLON                 &kp LEFT_ALT  &kp ESC  &kp LGUI  &mt_lctrl_lclk LCTRL LCLK  &lt 2 BACKSPACE                   &lt 1 SPACE  &kp ENTER                                 &kp GRAVE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -255,10 +257,10 @@
 
         layer_1 {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                      &kp NUMBER_6    &kp NUMBER_7  &kp N8        &kp N9     &kp N0
-&kp C_AC_BACK &kp C_AC_FORWARD &trans    &trans        &kp ESCAPE    &trans             &kp RIGHT_BRACE  &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &trans
-&shift_tab    &trans        &trans        &trans        &kp MINUS     &kp LEFT_BRACE     &kp JP_EISU      &kp JP_KANA     &trans        &moF          &moG       &moH
-&mt LCTL ESC  &trans        &trans        &kp LGUI      &kp LCTRL     &lt 2 BACKSPACE                     &lt 1 SPACE     &kp ENTER                                             &moI
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5                                  &kp NUMBER_6    &kp NUMBER_7  &kp N8        &kp N9     &kp N0
+&kp LEFT_BRACE  &trans        &trans        &kp RIGHT_BRACE  &kp ESCAPE    &trans             &kp MINUS    &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &kp SEMICOLON
+&shift_tab      &trans        &trans        &trans           &trans        &trans             &kp JP_EISU  &kp JP_KANA     &trans        &moF          &moG       &moH
+&mt LCTL ESC    &trans        &trans        &kp LGUI         &kp LCTRL     &lt 2 BACKSPACE                 &lt 1 SPACE     &kp ENTER                                             &moI
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -266,10 +268,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans     &trans     &trans     &trans                                &trans       &trans     &trans           &trans           &mac_screenshot
-&trans  &trans     &trans     &trans     &trans     &trans             &trans  &kp LEFT     &kp DOWN   &kp UP_ARROW     &kp RIGHT        &trans
-&trans  &trans     &trans     &trans     &trans     &trans             &trans  &trans       &trans     &kp C_MENU_LEFT  &kp C_MENU_DOWN  &kp C_MENU_RIGHT
-&trans  &trans     &trans     &kp LGUI   &kp LCTRL  &lt 2 BACKSPACE            &lt 1 SPACE  &kp ENTER                                                      &trans
+&trans  &trans  &trans  &trans    &trans                                &trans       &trans     &trans           &trans           &mac_screenshot
+&trans  &trans  &trans  &trans    &trans     &trans             &trans  &kp LEFT     &kp DOWN   &kp UP_ARROW     &kp RIGHT        &trans
+&trans  &trans  &trans  &trans    &trans     &trans             &trans  &trans       &trans     &kp C_MENU_LEFT  &kp C_MENU_DOWN  &kp C_MENU_RIGHT
+&trans  &trans  &trans  &kp LGUI  &kp LCTRL  &lt 2 BACKSPACE            &lt 1 SPACE  &kp ENTER                                                      &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -310,10 +312,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans     &trans     &trans                       &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans     &trans     &mkp LCLK  &mkp RCLK            &trans  &trans                                &mkp MCLK
+&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK            &trans  &trans                          &mkp MCLK
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -321,10 +323,10 @@
 
         scroll_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans               &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
