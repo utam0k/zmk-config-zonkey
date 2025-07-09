@@ -245,8 +245,8 @@
         default_layer {
             bindings = <
 &kp Q           &kp W         &kp E    &kp R     &kp T                                   &kp Y        &kp U      &kp I      &kp O    &kp P
-&kp A           &kp S         &kp D    &lt 6 F   &lt 7 G    &kp LG(RS(N0))     &kp PLUS  &kp H        &kp J      &kp K      &kp L    &kp SEMICOLON
-&mt_shift_tab LEFT_SHIFT TAB  &kp Z         &kp X    &kp C     &kp V      &kp B              &kp MINUS   &kp N        &kp M      &kp COMMA  &kp DOT  &kp SLASH
+&kp A           &kp S         &kp D    &lt 6 F   &lt 7 G    &kp LG(RS(N0))     &kp PLUS  &kp H        &kp J      &kp K      &kp L    &kp SQT
+&mt_shift_tab LEFT_SHIFT TAB  &kp Z         &kp X    &kp C     &kp V      &kp B              &kp SEMICOLON   &kp N        &kp M      &kp COMMA  &kp DOT  &kp SLASH
 &kp SEMICOLON       &kp LEFT_ALT  &kp ESC  &kp LGUI  &mt_lctrl_lclk LCTRL LCLK  &lt 2 BACKSPACE              &lt 1 SPACE  &kp ENTER                                 &kp GRAVE
             >;
 
@@ -257,7 +257,7 @@
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                      &kp NUMBER_6    &kp NUMBER_7  &kp N8        &kp N9     &kp N0
 &kp C_AC_BACK &kp C_AC_FORWARD &trans    &trans        &kp ESCAPE    &trans             &kp RIGHT_BRACE  &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &trans
-&shift_tab    &trans        &trans        &trans        &trans     &kp LEFT_BRACE     &kp JP_EISU      &kp JP_KANA     &trans        &moF          &moG       &moH
+&shift_tab    &trans        &trans        &trans        &kp MINUS     &kp LEFT_BRACE     &kp JP_EISU      &kp JP_KANA     &trans        &moF          &moG       &moH
 &mt LCTL ESC  &trans        &trans        &kp LGUI      &kp LCTRL     &lt 2 BACKSPACE                     &lt 1 SPACE     &kp ENTER                                             &moI
             >;
 
