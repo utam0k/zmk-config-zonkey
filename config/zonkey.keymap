@@ -278,7 +278,7 @@
         layer_1 {
             bindings = <
 &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5                                  &kp NUMBER_6    &kp NUMBER_7  &kp N8        &kp N9     &kp N0
-&kp SEMICOLON   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT       &kp ESCAPE    &trans             &kp MINUS    &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &trans
+&trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT       &kp ESCAPE    &trans             &kp MINUS    &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &kp SEMICOLON
 &kp LEFT_SHIFT  &trans            &trans             &trans        &trans        &trans             &kp JP_EISU  &kp JP_KANA     &trans        &moF          &moG       &moH
 &trans          &trans            &trans             &mt_lgui_ctrlspace LGUI 0      &kp LCTRL     &lt 2 BACKSPACE                 &lt 1 SPACE     &kp ENTER                                      &mac_screenshot
             >;
