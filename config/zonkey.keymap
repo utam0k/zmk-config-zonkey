@@ -239,9 +239,9 @@
             tap-ms = <20>;
         };
 
-        mt_lgui_lclk: mt_lgui_lclk {
+        mt_lctrl_lclk: mt_lctrl_lclk {
             compatible = "zmk,behavior-hold-tap";
-            label = "MOD_TAP_LGUI_LCLK";
+            label = "MOD_TAP_LCTRL_LCLK";
             #binding-cells = <2>;
             bindings = <&kp>, <&mkp>;
 
@@ -275,28 +275,6 @@
             hold-while-undecided;
             hold-trigger-on-release;
         };
-
-        lt_layer1_space: lt_layer1_space {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_LAYER1_SPACE";
-            #binding-cells = <2>;
-            bindings = <&mo>, <&kp>;
-
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            flavor = "tap-preferred";
-        };
-
-        mt_ctrl_ctrlspace: mt_ctrl_ctrlspace {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOD_TAP_CTRL_CTRLSPACE";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&ctrl_space>;
-
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            flavor = "tap-preferred";
-        };
     };
 
     keymap {
@@ -307,7 +285,7 @@
 &kp Q           &kp W         &kp E    &kp R     &kp T                                                        &kp Y        &kp U      &kp I      &kp O    &kp P
 &kp A           &kp S         &kp D    &lt 6 F   &lt 7 G                    &kp LG(RS(N0))     &kp MINUS      &kp H        &kp J      &kp K      &kp L    &kp TAB
 &kp LEFT_SHIFT  &kp Z         &kp X    &kp C     &kp V                      &kp B              &lt 2 SEMICOLON  &kp N        &kp M      &kp COMMA  &kp DOT  &kp SLASH
-&kp SEMICOLON   &kp ESC       &kp LEFT_ALT  &mt_lgui_lclk LGUI LCLK  &lt_layer1_space 1 SPACE  &kp BACKSPACE                   &mt_ctrl_ctrlspace LCTRL 0  &kp ENTER                                 &kp GRAVE
+&kp SEMICOLON   &kp ESC       &kp LEFT_ALT  &mt_lgui_ctrlspace LGUI 0  &mt_lctrl_lclk LCTRL LCLK  &kp BACKSPACE                   &lt 1 SPACE  &kp ENTER                                 &kp GRAVE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -318,7 +296,7 @@
 &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5                                  &kp NUMBER_6    &kp NUMBER_7  &kp N8        &kp N9     &kp N0
 &kp BACKSLASH   &kp LBKT          &kp RBKT           &kp SQT       &kp ESCAPE    &trans             &kp EQUAL    &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &kp SEMICOLON
 &kp LEFT_SHIFT  &trans            &trans             &trans        &trans        &trans             &kp JP_EISU  &kp JP_KANA     &trans        &ctrl_shift_plus  &moG       &moH
-&trans          &trans            &trans             &mt_lgui_ctrlspace LGUI 0      &mkp RCLK     &lt 2 BACKSPACE                 &lt 1 SPACE     &kp ENTER                                      &mac_screenshot
+&trans          &trans            &trans             &mt_lgui_ctrlspace LGUI 0      &kp LCTRL     &lt 2 BACKSPACE                 &lt 1 SPACE     &kp ENTER                                      &mac_screenshot
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
