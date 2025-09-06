@@ -1,0 +1,104 @@
+/*
+ * Custom configuration for Zonkey keyboard
+ * This file contains all custom macros, combos, and behaviors
+ * that differ from the upstream configuration.
+ */
+
+// Custom pointing device settings
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 15    // default: 10
+
+// Custom layer definitions
+#define DFb 0
+#define JIS 1
+#define BT 4
+
+/ {
+    // Custom combos
+    combos {
+        compatible = "zmk,combos";
+        
+        combo_equal {
+            timeout-ms = <30>;
+            key-positions = <8 9>;  // j and k
+            bindings = <&kp EQUAL>;
+            layers = <0>;
+        };
+    };
+
+    // Custom macros
+    macros {
+        shift_tab: shift_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(TAB)>;
+            label = "SHIFT_TAB";
+        };
+
+        mac_screenshot: mac_screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(N4))>;
+            label = "MAC_SCREENSHOT";
+        };
+
+        ctrl_space: ctrl_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SPACE)>;
+            label = "CTRL_SPACE";
+        };
+
+        ctrl_shift_plus: ctrl_shift_plus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(KP_PLUS))>;
+            label = "CTRL_SHIFT_PLUS";
+        };
+    };
+
+    // Custom behaviors
+    behaviors {
+        mt_lctrl_lclk: mt_lctrl_lclk {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP_LCTRL_LCLK";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&mkp>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            hold-while-undecided;
+            hold-trigger-on-release;
+        };
+
+        mt_shift_tab: mt_shift_tab {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP_SHIFT_TAB";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <125>;
+            flavor = "tap-preferred";
+        };
+
+        mt_lgui_ctrlspace: mt_lgui_ctrlspace {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP_LGUI_CTRLSPACE";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&ctrl_space>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            hold-while-undecided;
+            hold-trigger-on-release;
+        };
+
+        encoder_msc_down_up: encoder_msc_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <20>;
+        };
+    };
+};
