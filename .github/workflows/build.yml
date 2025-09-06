@@ -2,5 +2,30 @@ name: Build ZMK firmware
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
+  merge-configs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Merge config files
+        run: |
+          bash scripts/merge-configs.sh
+
+      - name: Upload merged configs
+        uses: actions/upload-artifact@v4
+        with:
+          name: merged-configs
+          path: config/boards/shields/zonkey/zonkey_R.conf
+          retention-days: 1
+
+      - name: Commit merged config
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add config/boards/shields/zonkey/zonkey_R.conf
+          git diff --staged --quiet || git commit -m "Auto-merge config files"
+        continue-on-error: true
+
   build:
+    needs: merge-configs
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main

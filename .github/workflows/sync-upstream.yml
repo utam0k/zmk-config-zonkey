@@ -47,15 +47,23 @@ jobs:
 
           echo "Syncing build files..."
           git checkout upstream/main -- config/west.yml 2>/dev/null || true
-          git checkout upstream/main -- .github/workflows/build.yml 2>/dev/null || true
           git checkout upstream/main -- build.yaml 2>/dev/null || true
+
+          # Sync base config from upstream
+          echo "Syncing base config..."
+          git show upstream/main:config/boards/shields/zonkey/zonkey_R.conf > config/boards/shields/zonkey/zonkey_R-base.conf 2>/dev/null || true
 
           # Preserve custom files
           echo "Preserving custom files..."
           git checkout HEAD -- config/zonkey.keymap 2>/dev/null || true
           git checkout HEAD -- config/zonkey-custom.dtsi 2>/dev/null || true
-          git checkout HEAD -- config/boards/shields/zonkey/zonkey_R.conf 2>/dev/null || true
+          git checkout HEAD -- config/boards/shields/zonkey/zonkey_R-custom.conf 2>/dev/null || true
           git checkout HEAD -- config/boards/shields/zonkey/zonkey_R.overlay 2>/dev/null || true
+
+      - name: Merge configs
+        run: |
+          echo "Merging config files..."
+          bash scripts/merge-configs.sh
 
       - name: Check changes
         id: changes
