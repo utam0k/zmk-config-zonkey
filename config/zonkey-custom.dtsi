@@ -93,9 +93,9 @@
             hold-trigger-on-release;
         };
 
-        encoder_msc_down_up: encoder_msc_down_up {
+        scroll_up_down: scroll_up_down {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "ENCODER_MSC_DOWN_UP";
+            label = "SCROLL_UP_DOWN";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
             tap-ms = <20>;

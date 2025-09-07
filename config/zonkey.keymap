@@ -176,14 +176,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-            tap-ms = <20>;
-        };
     };
 
     keymap {
@@ -198,7 +190,7 @@
 &lt 4 SEMICOLON  &kp ESC  &kp LEFT_ALT  &mt_lgui_ctrlspace LGUI 0  &mt_lctrl_lclk LCTRL LCLK  &kp BACKSPACE                      &lt 1 SPACE  &kp ENTER                                 &kp GRAVE
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
         };
 
         layer_1 {
@@ -210,7 +202,7 @@
 &trans          &trans        &trans        &mt_lgui_ctrlspace LGUI 0  &kp LCTRL     &lt 2 BACKSPACE                 &lt 1 SPACE     &kp ENTER                                                 &mac_screenshot
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_2 {
@@ -222,7 +214,7 @@
 &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &mt_lgui_ctrlspace LGUI 0  &kp LCTRL  &lt 2 BACKSPACE            &lt 1 SPACE  &kp ENTER                                                      &trans
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_3 {
@@ -239,7 +231,7 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 2 SPACE  &lt 1 INT_MUHENKAN            &kp BACKSPACE  &kp ENTER                           &kp DEL
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_4 {
@@ -256,7 +248,7 @@
 &kp LCTRL       &kp LEFT_WIN    &kp LEFT_ALT  &kp INT_HENKAN  &kp SPACE     &kp INT_MUHENKAN                     &kp BACKSPACE    &kp ENTER                                                        &kp DEL
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_5 {
@@ -273,7 +265,7 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &kp INT_HENKAN  &kp SPACE  &kp INT_MUHENKAN            &kp BACKSPACE  &kp ENTER                          &kp DEL
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_6 {
@@ -284,7 +276,7 @@
 &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK            &trans  &trans                          &mkp MCLK
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
