@@ -88,10 +88,15 @@ jobs:
 
           git push origin ${{ env.branch }}
 
+      - name: Return to main for PR
+        if: steps.changes.outputs.has_changes == 'true' && inputs.dry_run != true
+        run: git checkout main
+
       - name: Create PR
         if: steps.changes.outputs.has_changes == 'true' && inputs.dry_run != true
         uses: peter-evans/create-pull-request@v5
         with:
+          base: main
           branch: ${{ env.branch }}
           delete-branch: true
           title: '[Auto] Sync from upstream'
